@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="Logo" src="./ASSETS/aluraLat.png" alt="Logo Alura Latam">
+    </header>
+    <main>
+        <section class="cuerpo">
+            <section class="container">
+                <textarea class="Texto" id="TextoUsuario" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="Texto__Usuario">
+                    <img class="img-aviso" src="./ASSETS/aviso.png" alt="Signo de exclamación">
+                    <p class="Texto-aviso">Solo letras minúsculas y sin acento</p>
+                </div>
+            </section>  
+            <div class="botones">
+                <button onclick="Encriptar();" class="botones__Accion_E" id="BotonEncriptar">Encriptar</button>
+                <button onclick="Desencriptar();" class="botones__Accion_D" id="BotonDesencriptar">Desencriptar</button>
+            </div>
+            <section class="Resultado">
+                <div class="ResultadoContenedor">
+                    <img class="chicoLupa1" src="./ASSETS/chicoLupa1.png" alt="Hombre con una lupa">
+                    <p class="parrafoInicial">Ningún mensaje fue encontrado</p>
+                    <p class="parrafoSecundario">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <textarea class="MensajeUsuario" id="Mensaje_Usuario" readonly></textarea>
+                <button class="botonCopy" id="copiar">Copiar</button>
+            </section>    
+        </section>
+    </main>
+    <footer>
+        <p class="Copyrigth">&copy; Copyrigth 2024 - Encriptador de Texto - Desarrollado por Bryan Arias</p>
+        <a href="https://github.com" target="_blank">
+            <img src="./ASSETS/github.png" alt="Logo GitHub" class="github">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="./ASSETS/instagram.png" alt="Logo Instagram" class="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+            <img src="./ASSETS/linkedin.png" alt="Logo LinkedIn" class="linkedin">
+        </a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

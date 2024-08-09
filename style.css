@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F6E35D;
+    color: #0F172A;
+    height: 100%;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 10px 0 0 140px;
+    width: calc(100% - 40px);
+}
+
+.header {
+    padding: 40px 0 0 40px;
+    position: absolute;
+}
+
+.Logo {
+    display: flex;
+    align-items: flex-start;
+    width: 30px;
+    height: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.container {
+    width: 60%;
+    margin: 150px 0 0 20px;
+    background: transparent;
+}
+
+.Texto {
+    display: flex;
+    align-items: start;
+    width: 800px;
+    height: 288px;
+    font-weight: 500;
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    border: none;
+    color: #203B52;
+    padding: 10px;
+}
+
+.Texto::placeholder {
+    color: #203B52;
+}
+
+.Texto__Usuario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.img-aviso {
+    width: 15px;
+}
+
+.Texto-aviso {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #3F5B74;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 550px;
+}
+
+.botones__Accion_E {
+    width: 326px;
+    text-align: center;
+    padding: 22px 0;
+    border-radius: 24px;
+    background-color: #203B52;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 3px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.botones__Accion_E:hover {
+    transform: scale(0.97);
+}
+
+.botones__Accion_D {
+    width: 326px;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 24px;
+    background-color: #8EA1B3;
+    color: #203B52;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 3px solid #203B52;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.botones__Accion_D:hover {
+    transform: scale(0.97);
+}
+
+.Resultado {
+    width: 500px;
+    height: 600px;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+    background-color: #C6D3DF;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.ResultadoContenedor {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 49px;
+    background: #C6D3DF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chicoLupa1 {
+    width: 250px;
+}
+
+.parrafoInicial {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Krona One", sans-serif;
+}
+
+.parrafoSecundario {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #203B52;
+}
+
+.botonCopy {
+    width: 326px;
+    text-align: center;
+    padding: 22px 0;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    visibility: hidden;
+    color: #203B52;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 3px solid #203B52;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+    margin-top: 500px;
+}
+
+.botonCopy:hover {
+    transform: scale(0.97);
+}
+
+.MensajeUsuario {
+    width: 90%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0F172A;
+    background: transparent;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+/*----------pie de pagina*/
+
+footer {
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    height: auto; /* Ajustado para permitir el contenido */
+    font-size: 12px;
+    font-weight: 700;
+    color: #203B52;
+    font-family: "Montserrat", sans-serif;
+}
+
+.github:hover,
+.Instagram:hover,
+.linkedin:hover {
+    color: #203B52;
+    opacity: 0.8;
+}
+
+@media (max-width: 1250px) {
+    .cuerpo {
+        margin: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    .header {
+        padding: 30px 20px;
+    }
+
+    .Logo {
+        width: 25px;
+        height: 35px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 80%;
+        margin: 50px auto 0;
+    }
+
+    .Texto {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .Texto__Usuario {
+        position: relative;
+        top: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones {
+        flex-direction: column;
+        position: relative;
+        top: auto;
+    }
+
+    .botones__Accion_E, .botones__Accion_D {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .Resultado {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .ResultadoContenedor {
+        width: 100%;
+    }
+
+    .chicoLupa1 {
+        width: 200px;
+    }
+
+    .parrafoInicial {
+        font-size: 22px;
+    }
+
+    .parrafoSecundario {
+        font-size: 16px;
+    }
+
+    .botonCopy {
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .MensajeUsuario {
+        height: auto;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    .cuerpo {
+        margin-top: 40px;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .Logo {
+        width: 20px;
+        height: 30px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .Texto {
+        font-size: 20px;
+    }
+
+    .Texto__Usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .botones__Accion_E, .botones__Accion_D {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .Resultado {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .ResultadoContenedor {
+        width: 100%;
+    }
+
+    .chicoLupa1 {
+        width: 100px;
+    }
+
+    .parrafoInicial {
+        font-size: 18px;
+    }
+
+    .parrafoSecundario {
+        font-size: 14px;
+    }
+
+    .botonCopy {
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .MensajeUsuario {
+        height: auto;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* Ajustes para pantallas más grandes (desktops) */
+@media (min-width: 1200px) {
+    .cuerpo {
+        margin: 10px 0 0 140px;
+        width: calc(100% - 40px);
+    }
+
+    .Texto {
+        width: 800px;
+        font-size: 36px;
+    }
+
+    .botones__Accion_E, .botones__Accion_D {
+        width: 326px;
+        font-size: 1.25rem;
+    }
+}
+
+/* Ajustes generales para tablets */
+@media (max-width: 768px) {
+    .cuerpo {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        width: auto;
+        margin-top: 55px;
+    }
+
+    .header {
+        padding: 20px 10px;
+    }
+
+    .Logo {
+        width: 25px;
+        height: 35px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .Texto {
+        width: 100%;
+        font-size: 24px;
+        height: auto;
+    }
+
+    .Texto__Usuario {
+        position: relative;
+        top: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .botones {
+        flex-direction: column;
+        position: relative;
+        top: auto;
+    }
+
+    .botones__Accion_E, .botones__Accion_D {
+        width: 100%;
+    }
+
+    .Resultado {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .ResultadoContenedor {
+        width: 90%;
+    }
+
+    .chicoLupa1 {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .parrafoInicial {
+        font-size: 20px;
+    }
+
+    .parrafoSecundario {
+        font-size: 16px;
+    }
+
+    .botonCopy {
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .MensajeUsuario {
+        height: auto;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    .cuerpo {
+        margin-top: 40px;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .Logo {
+        width: 20px;
+        height: 30px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .Texto {
+        font-size: 20px;
+    }
+
+    .Texto__Usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .botones__Accion_E, .botones__Accion_D {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .Resultado {
+        width: 100%;
+        max-height: 400px; /* Ajusta la altura máxima para que no sea tan grande verticalmente */
+        margin-top: 10px;
+        overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+    }
+
+    .ResultadoContenedor {
+        width: 100%;
+    }
+
+    .chicoLupa1 {
+        width: 100px;
+    }
+
+    .parrafoInicial {
+        font-size: 18px;
+    }
+
+    .parrafoSecundario {
+        font-size: 14px;
+    }
+
+    .botonCopy {
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .MensajeUsuario {
+        height: auto;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
