@@ -232,7 +232,7 @@ footer {
     margin-top: 15px;
     padding: 10px;
     text-align: center;
-    height: auto; /* Ajustado para permitir el contenido */
+    height: auto; 
     font-size: 12px;
     font-weight: 700;
     color: #203B52;
@@ -329,7 +329,6 @@ footer {
     }
 }
 
-/* Ajustes para móviles */
 @media (max-width: 480px) {
     .cuerpo {
         margin-top: 40px;
@@ -406,25 +405,7 @@ footer {
     }
 }
 
-/* Ajustes para pantallas más grandes (desktops) */
-@media (min-width: 1200px) {
-    .cuerpo {
-        margin: 10px 0 0 140px;
-        width: calc(100% - 40px);
-    }
 
-    .Texto {
-        width: 800px;
-        font-size: 36px;
-    }
-
-    .botones__Accion_E, .botones__Accion_D {
-        width: 326px;
-        font-size: 1.25rem;
-    }
-}
-
-/* Ajustes generales para tablets */
 @media (max-width: 768px) {
     .cuerpo {
         flex-direction: column;
@@ -444,6 +425,7 @@ footer {
     }
 
     main {
+        display: flex;
         flex-direction: column;
     }
 
@@ -513,80 +495,3 @@ footer {
     }
 }
 
-/* Ajustes para móviles */
-@media (max-width: 480px) {
-    .cuerpo {
-        margin-top: 40px;
-    }
-
-    .header {
-        padding: 10px;
-    }
-
-    .Logo {
-        width: 20px;
-        height: 30px;
-    }
-
-    main {
-        flex-direction: column;
-    }
-
-    .container {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .Texto {
-        font-size: 20px;
-    }
-
-    .Texto__Usuario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .botones {
-        flex-direction: column;
-    }
-
-    .botones__Accion_E, .botones__Accion_D {
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    .Resultado {
-        width: 100%;
-        max-height: 400px; /* Ajusta la altura máxima para que no sea tan grande verticalmente */
-        margin-top: 10px;
-        overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
-    }
-
-    .ResultadoContenedor {
-        width: 100%;
-    }
-
-    .chicoLupa1 {
-        width: 100px;
-    }
-
-    .parrafoInicial {
-        font-size: 18px;
-    }
-
-    .parrafoSecundario {
-        font-size: 14px;
-    }
-
-    .botonCopy {
-        width: 100%;
-        visibility: hidden;
-    }
-
-    .MensajeUsuario {
-        height: auto;
-        font-size: 16px;
-        line-height: 24px;
-    }
-}
